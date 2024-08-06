@@ -1,4 +1,4 @@
-# TaskReacker 2.0
+# TaskTrack 2.0
 
 TaskTracker is a task management SPA built with **React** and **TypeScript**. It allows users to manage their tasks efficiently with a variety of features, including sorting, filtering, and **local storage** support.
 
