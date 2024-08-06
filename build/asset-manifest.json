@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/to-do-list_react/build/static/css/main.0ddb7e49.css",
-    "main.js": "/to-do-list_react/build/static/js/main.8d9bfb69.js",
-    "static/media/arrows.svg": "/to-do-list_react/build/static/media/arrows.449b186da5a15420d5bf.svg",
-    "index.html": "/to-do-list_react/build/index.html",
-    "main.0ddb7e49.css.map": "/to-do-list_react/build/static/css/main.0ddb7e49.css.map",
-    "main.8d9bfb69.js.map": "/to-do-list_react/build/static/js/main.8d9bfb69.js.map"
+    "main.css": "/task-tracker_react/build/static/css/main.e7f9dfba.css",
+    "main.js": "/task-tracker_react/build/static/js/main.8d9bfb69.js",
+    "static/media/arrows.svg": "/task-tracker_react/build/static/media/arrows.449b186da5a15420d5bf.svg",
+    "index.html": "/task-tracker_react/build/index.html",
+    "main.e7f9dfba.css.map": "/task-tracker_react/build/static/css/main.e7f9dfba.css.map",
+    "main.8d9bfb69.js.map": "/task-tracker_react/build/static/js/main.8d9bfb69.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ddb7e49.css",
+    "static/css/main.e7f9dfba.css",
     "static/js/main.8d9bfb69.js"
   ]
 }
