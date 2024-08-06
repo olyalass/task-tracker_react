@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { memo } from 'react';
+import React, { memo } from 'react';
 import nav from './style.module.scss';
 import { Filter } from '../../types';
 
@@ -15,6 +15,7 @@ const Nav = memo(
     <div className={nav.element}>
       <div className={nav.container}>
         <button
+        type='button'
           className={classNames(nav.button, {
             [nav.selected]: filter === 'all',
           })}
@@ -23,6 +24,7 @@ const Nav = memo(
           All
         </button>
         <button
+        type='button'
           className={classNames(nav.button, {
             [nav.selected]: filter === 'active',
           })}
@@ -31,6 +33,7 @@ const Nav = memo(
           Active
         </button>
         <button
+        type='button'
           className={classNames(nav.button, {
             [nav.selected]: filter === 'done',
           })}
@@ -40,6 +43,7 @@ const Nav = memo(
         </button>
       </div>
       <button
+        type='button'
         className={classNames(nav.button, nav.reverse, {
           [nav.selected]: isReversed,
         })}
