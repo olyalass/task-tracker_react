@@ -1,0 +1,50 @@
+@import './mixins.scss';
+
+$background-color: rgb(193, 214, 230);
+
+html {
+  background-color: $background-color;
+}
+
+body {
+  margin: 0;
+}
+
+.element {
+  width: 100%;
+  background-color: $background-color;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.title {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-shadow: 2px 2px black;
+  color: rgb(244, 254, 165);
+  padding: 15px 20px;
+  @include soft-black-border();
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  @include soft-black-border();
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+}
+.list_wrap {
+  padding: 5px;
+  position: relative;
+  min-height: 300px;
+}

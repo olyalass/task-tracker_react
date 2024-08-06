@@ -1,0 +1,104 @@
+@import '../../mixins.scss';
+@import '../../App.module.scss';
+
+$task-button-color: rgb(221, 255, 221);
+$task-button-hover-color: rgb(210, 220, 252);
+
+.element {
+  position: relative;
+  width: 83%;
+  @include soft-black-border();
+  margin: 10px auto;
+  padding: 15px;
+
+  .wrap {
+    @include space-between-flex();
+  }
+
+  .text {
+    font-size: 21px;
+    margin: 10px 0 15px;
+  }
+
+  .buttons_container {
+    @include space-between-flex();
+    width: 162px;
+  }
+
+  .button {
+    @include default-button();
+    background-color: $task-button-color;
+
+    &:hover {
+      background-color: $task-button-hover-color;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      &:hover {
+        box-shadow: 5px 5px black;
+      }
+    }
+  }
+
+  .button_done {
+    background-color: rgb(233, 233, 233);
+    color: rgb(181, 181, 181);
+  }
+
+  .spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(247, 234, 202, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_wrap {
+      margin: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 68px;
+      animation: typing;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(4, end);
+      animation-fill-mode: forwards;
+    }
+
+    &__text {
+      display: inline-block;
+    }
+  }
+
+  .status {
+    margin-bottom: 0;
+
+    &_active {
+      color: rgb(115, 185, 115);
+    }
+
+    &_done {
+      color: grey;
+    }
+  }
+
+  .date {
+    width: 140px;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 68px;
+  }
+  to {
+    width: 85px;
+  }
+}

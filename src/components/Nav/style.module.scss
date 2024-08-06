@@ -1,0 +1,37 @@
+@import '../../mixins.scss';
+
+$nav-button-hover-color: rgb(210, 179, 239);
+$nav-button-color: rgb(250, 196, 205);
+
+.element {
+  @include space-between-flex();
+  width: 100%;
+  margin-bottom: 20px;
+
+  .container {
+    @include space-between-flex();
+    width: 200px;
+  }
+
+  .button {
+    @include default-button();
+    min-width: 45px;
+    background-color: $nav-button-color;
+
+    &:hover {
+      background-color: $nav-button-hover-color;
+    }
+  }
+
+  .selected {
+    background-color: $nav-button-hover-color;
+  }
+
+  .reverse {
+    background-image: url(../../../public/arrows.svg);
+    @include no-repeat-button-background();
+    min-width: 28.4px;
+    height: 28.4px;
+    rotate: 90deg;
+  }
+}

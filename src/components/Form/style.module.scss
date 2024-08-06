@@ -1,0 +1,75 @@
+@import '../../mixins.scss';
+
+.element {
+  width: 87.3%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 80px;
+  box-sizing: border-box;
+  margin: 35px auto 15px;
+}
+
+.wrap {
+  position: relative;
+  @include space-between-flex();
+  align-items: center;
+}
+
+.input {
+  @include soft-black-border();
+  width: 75%;
+  height: 60px;
+  padding-left: 20px;
+  background-color: rgb(255, 252, 240);
+  font-weight: 600;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button {
+  @include default-button();
+  background-color: rgb(253, 253, 180);
+
+  &:hover {
+    background-color: peachpuff;
+  }
+
+  &:disabled {
+    background-color: rgb(233, 233, 233);
+    color: rgb(181, 181, 181);
+    cursor: not-allowed;
+
+    &:hover {
+      box-shadow: 5px 5px black;
+    }
+  }
+}
+
+.counter {
+  position: absolute;
+  bottom: 8px;
+  left: 36px;
+  font-size: 12px;
+  z-index: 2;
+  color: grey;
+  margin: 0;
+}
+.error {
+  color: rgb(255, 93, 93);
+}
+
+.warning {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  right: 32%;
+  font-size: 12px;
+  margin: 0;
+}
+
+.warning_visible {
+  display: block;
+}
